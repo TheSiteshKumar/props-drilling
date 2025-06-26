@@ -1,4 +1,5 @@
 
+
 export default function Child({ user, notifications, markAsRead, updateTheme }) {
   return (
     <div className="bg-blue-50 rounded-lg shadow p-6 mb-6">
@@ -12,16 +13,8 @@ export default function Child({ user, notifications, markAsRead, updateTheme }) 
         Props I'm forced to handle: user, notifications, markAsRead, updateTheme
       </div>
       
-      <div className="grid md:grid-cols-2 gap-4">
-        <Grandchild 
-          user={user}
-          updateTheme={updateTheme}
-        />
-        <AnotherGrandchild 
-          notifications={notifications}
-          markAsRead={markAsRead}
-        />
-      </div>
+      <p>Name: {}</p>
+      <p>Email: {}</p>
     </div>
   );
 }

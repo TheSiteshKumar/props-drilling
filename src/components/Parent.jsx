@@ -1,3 +1,4 @@
+import Child from "@/components/Child";
 export default function Parent({ user, notifications, markAsRead, updateTheme }) {
   return (
     <div className="bg-yellow-50 rounded-lg shadow p-6 mb-6">
@@ -13,9 +14,7 @@ export default function Parent({ user, notifications, markAsRead, updateTheme })
       
       <Child 
         user={user}
-        notifications={notifications}
-        markAsRead={markAsRead}
-        updateTheme={updateTheme}
+
       />
     </div>
   );
