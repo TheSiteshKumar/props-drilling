@@ -1,7 +1,7 @@
 "use client";
 import Grandparent from "@/components/Grandparent";
 
-import Home from "@/components/Home";
+import Note from "@/components/Note";
 
 export default function page() {
   return (
@@ -10,8 +10,7 @@ export default function page() {
       {/* <Parent />
       <Child />
       <Grandchild /> */}
-
-      <Home />
+      <Note />
     </>
   );
 }

@@ -13,8 +13,8 @@ export default function Child({ user, notifications, markAsRead, updateTheme }) 
         Props I'm forced to handle: user, notifications, markAsRead, updateTheme
       </div>
       
-      <p>Name: {}</p>
-      <p>Email: {}</p>
+      <p>Name: {user?.name || 'No name provided'}</p>
+      <p>Email: {user?.email || 'No email provided'}</p>
     </div>
   );
 }
